@@ -1,0 +1,12 @@
+SELECT * from gms.billing_geneva_cor2 WHERE record_type = '1' limit 10;
+SELECT * from gms.billing_geneva_cor2 WHERE dt = '2023-01-08' and msg_id != '3FF44E68' limit 10;
+SELECT * from gms.billing_geneva_cor2 WHERE dt = '2023-01-08';
+SELECT count(*) from gms.billing_geneva_cor2 WHERE dt = '2023-01-08';
+SELECT * from gms.billing_geneva_cor2 WHERE dt = '2023-01-08' and id is NULL limit 10;
+SELECT * from gms.billing_geneva_cor2 WHERE dt = '2023-01-08' and id is not NULL limit 10;
+
+SELECT * from gms.billing_geneva_cor2 WHERE dt = '2023-01-08' and tech__field is NULL limit 10;
+SELECT * from gms.billing_geneva_cor2 WHERE id is not NULL limit 10;
+SELECT * from gms.billing_geneva_cor2 WHERE tech__field is not NULL limit 10;
+SELECT count(*) from gms.billing_geneva_cor2 WHERE tech__field ='2';
+SELECT * from gms.billing_geneva_cor2 order by dt limit 10;
