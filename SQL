@@ -10,3 +10,15 @@ SELECT * from gms.billing_geneva_cor2 WHERE id is not NULL limit 10;
 SELECT * from gms.billing_geneva_cor2 WHERE tech__field is not NULL limit 10;
 SELECT count(*) from gms.billing_geneva_cor2 WHERE tech__field ='2';
 SELECT * from gms.billing_geneva_cor2 order by dt limit 10;
+
+
+SELECT * FROM gms.billing_geneva_cor2 WHERE last_upd is not NULL order by last_upd limit 10;
+
+SELECT * FROM gms.billing_kyiv_hbr limit 10;
+DELETE FROM gms.billing_kyiv_hbr WHERE channel_type = 'sms';
+
+SELECT * FROM gms.billing_kyiv_hbr WHERE viber_ts is not NULL ;
+SELECT COUNT(*) from gms.billing_kyiv_hbr ; 
+SELECT * FROM gms.billing_kyiv_hbr WHERE viber_ts is NULL limit 10;
+SELECT * FROM gms.billing_kyiv_hbr WHERE viber_ts is not NULL limit 10;
+
